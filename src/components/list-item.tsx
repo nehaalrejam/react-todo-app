@@ -26,14 +26,7 @@ export default function ListItem({
         >
           {title}
         </span>
-        <Button
-          color="error"
-          variant="contained"
-          onClick={() => onDelete(id)}
-          size="small"
-        >
-          <FaTrashCan />
-        </Button>
+        <FaTrashCan />
       </div>
     </li>
   );
