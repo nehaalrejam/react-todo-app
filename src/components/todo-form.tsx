@@ -21,7 +21,7 @@ export default function TodoForm({ submit, change, text }) {
         label="Todo title"
         onChange={change}
         value={text}
-        className="w-100 mt-4"
+        className="w-100 rounded mt-4"
         sx={{ backgroundColor: "white" }}
       />
 

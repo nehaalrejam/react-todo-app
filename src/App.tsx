@@ -163,7 +163,7 @@ export default function App() {
           )}
           <ul className="list-group flex-column ">
             {notes.length === 0 ? (
-              <li className={`list-group-item ${darkTheme ? "text-light" : ""}`}>
+              <li className={`list-group-item ${darkTheme ? "text-light" : ""} bg-transparent`}>
                 No Todos available
               </li>
             ) : searchResult.length > 0 ? (
@@ -181,7 +181,7 @@ export default function App() {
             ) : (
 
               // so if the searchResult array is empty then that means no "note.title" includes the "search" hence an error message is displayed instead
-              <li className={`list-group-item ${darkTheme ? "text-light" : ""}`}>
+              <li className={`list-group-item ${darkTheme ? "text-light" : ""} bg-transparent`}>
                 No Matching Results
               </li>
             )}
