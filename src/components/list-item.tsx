@@ -20,13 +20,13 @@ export default function ListItem({
       className={`${darkTheme ? "bg" : ""} list-group ${!darkTheme ? "list-group-item" : ""} p-1 m-2`}
     >
       <div className="d-flex justify-content-between align-items-center">
-        <Checkbox onChange={() => toggle(id)} checked={completed} />
+        <Checkbox onChange={() => toggle(id)} checked={completed} sx={darkTheme ? { color: "white" } : { color: "" }} />
         <span
           className={`${darkTheme ? "text-light" : ""} ${completed ? "text-decoration-line-through" : ""}`}
         >
           {title}
         </span>
-        <button onClick={() => onDelete(id)} className="btn "><FaTrashCan /></button>
+        <button onClick={() => onDelete(id)} className={`btn ${darkTheme ? "text-light" : ""}`}><FaTrashCan /></button>
 
       </div>
     </li>
